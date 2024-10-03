@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google avec Bootstrap et Particules</title>
+
+  <!-- Lien vers Bootstrap via CDN -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Lien vers le fichier CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Lien vers particles.js -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+
+<body>
+
+  <!-- Conteneur des particules -->
+  <div id="particles-js"></div>
+
+  <!-- Header avec Bootstrap classes -->
+  <header class="d-flex justify-content-end align-items-center p-3">
+    <nav class="d-flex gap-3">
+      <a href="#" class="text-dark">Gmail</a>
+      <a href="#" class="text-dark">Images</a>
+      <!-- Icône du menu Google Apps -->
+      <div class="menu-icon"></div>
+    </nav>
+    <div class="ml-3">
+      <button class="btn btn-primary">Connexion</button>
+    </div>
+  </header>
+
+  <!-- Section principale avec logo, barre de recherche et boutons -->
+  <main class="d-flex flex-column justify-content-center align-items-center text-center">
+    <div class="logo mb-3">
+      <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+    </div>
+
+    <!-- Barre de recherche -->
+    <div class="search-bar w-100" style="max-width: 600px;">
+      <input type="text" class="form-control" placeholder="Rechercher sur Google">
+    </div>
+
+    <!-- Boutons pour lancer la recherche -->
+    <div class="buttons mt-3">
+      <button class="btn btn-secondary">Recherche Google</button>
+      <button class="btn btn-secondary">J'ai de la chance</button>
+    </div>
+  </main>
+
+  <!-- Footer avec Bootstrap classes -->
+  <footer class="d-flex justify-content-center p-3 bg-light">
+    <a href="#" class="mx-2 text-dark">À propos</a>
+    <a href="#" class="mx-2 text-dark">Publicité</a>
+    <a href="#" class="mx-2 text-dark">Entreprise</a>
+    <a href="#" class="mx-2 text-dark">Confidentialité</a>
+    <a href="#" class="mx-2 text-dark">Conditions d'utilisation</a>
+  </footer>
+
+  <!-- Initialisation des particules -->
+  <script>
+    particlesJS.load('particles-js', 'particlesjs-config.json', function() {
+      console.log('particles.js loaded - callback');
+    });
+  </script>
+</body>
+
+</html>

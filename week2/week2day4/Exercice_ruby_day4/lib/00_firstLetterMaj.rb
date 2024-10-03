@@ -7,4 +7,4 @@ def letter_caps
   puts "Nombre de Handles commençant par une majuscule : #{upper_case}"
 end
 
-letter_caps
+letter_caps 

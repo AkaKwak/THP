@@ -1,11 +1,9 @@
 require_relative("./00_journalists.rb")
 
-def shortest_handle
-  short = $list.min_by {|handle| handle.length}
- puts "Le nom d'utilisateur le plus court est #{short}"
+def six_letters
+  handles_6_char = $list.select { |list| list.length - 1 == 6 }
+ puts "Il y a #{handles_6_char.size} handles avec 5 caractères."
 end
 
-shortest_handle
+six_letters
 
-# handles_5_char = handles.select { |handle| handle.length - 1 == 5 } 
-  # puts "Il y a #{handles_5_char.size} handles avec 5 caractères."

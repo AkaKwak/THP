@@ -24,7 +24,7 @@ end
 
 def capsChar_handle
   upper_case = $list.count do |str|  # Parcourt chaque handle dans $list et compte ceux qui remplissent la condition suivante
-    str.length >= 2 && str[1] == str[1].upcase  # Vérifie si le deuxième caractère du handle (après '@') est une majuscule
+    str.length >= 2 && str[1] == str[1].upcase  # Vérifie si le deuxième caractère du handle (après '@') est une majuscule [A\/Z]
   end
   puts "Nombre de Handles commençant par une majuscule : #{upper_case}"
 end

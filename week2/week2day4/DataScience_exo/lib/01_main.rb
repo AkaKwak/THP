@@ -4,7 +4,7 @@ puts "CHAT GPT"
 
 require_relative("./01_cryptocurrencies.rb")
 
-hash_mixed = $cryptos.zip($prices).to_h
+hash_mixed = cryptos.zip(prices)
 
 puts hash_mixed
 ######################################### A PARTIR D'ICI C'EST CHAT-GPT4o"#####################################################

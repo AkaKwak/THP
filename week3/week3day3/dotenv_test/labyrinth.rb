@@ -34,5 +34,5 @@ class Maze
 width = 10
 height = 10
 
-  Maze.new(widh, height)
+  Maze.new(width, height)
 end

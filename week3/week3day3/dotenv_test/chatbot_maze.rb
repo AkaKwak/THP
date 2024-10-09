@@ -17,11 +17,11 @@ end
 def data_openai(prompt)
   {
     "prompt" => prompt,
-    "max_tokens" => 50,
+    "max_tokens" => 150,
     "n" => 1,
     "stop" => ["\n"],
-    "temperature" => 0.5,
-    "model" => "davinci-002"
+    "temperature" => 0,
+    "model" => "gpt-3.5-turbo-instruct"
   }
 end
 
@@ -30,7 +30,7 @@ headers = login_openai(api_key, url)
 # Démarrer une boucle de conversation
 loop do
   # Demander à l'utilisateur d'entrer un prompt
-  print "Tapez votre prompt (ou 'stop' pour arrêter) : "
+  print "Une erreur dans le labyrinthe ? (ou 'stop' pour arrêter) : "
   user_input = gets.chomp
   
   # Si l'utilisateur tape 'stop', on sort de la boucle

@@ -1,4 +1,4 @@
-clas Maze
+class Maze
   def initialize(width, height)
     @width = width
     @height = height
@@ -28,11 +28,11 @@ clas Maze
   end
 
   def display_maze
-    @maze.eah { |row puts row.join }
+    @maze.eah { |row| puts row.join }
   end
-end
 
 width = 10
 height = 10
 
-Maze.new(widh, height)
+  Maze.new(widh, height)
+end

@@ -1,0 +1,14 @@
+require 'json'
+require 'csv'
+
+# Exemple de données
+tableau = [[{nom: "Jean", message: "Bonjour,\nComment allez-vous ?"}], "10"]
+# Écriture du fichier JSON formaté avec des retours à la ligne
+File.open('db/fichier.json', 'w') do |file|
+  file.write(JSON.pretty_generate(tableau))
+end
+
+
+  CSV.open('db/thing.csv', 'a') do |csv|
+     csv << tableau
+  end
